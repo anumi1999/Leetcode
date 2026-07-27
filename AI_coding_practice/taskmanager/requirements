@@ -1,0 +1,40 @@
+Requirements:
+
+Problem: Task Manager API
+Build a simple task management backend:
+
+POST /tasks → create a task with a title, description, and due date
+GET /tasks → return all tasks
+PUT /tasks/:id → update a task (mark complete, change title, etc.)
+DELETE /tasks/:id → delete a task
+GET /tasks/overdue → return all tasks where due date has passed and task is not complete
+
+
+Think through these 4 things:
+
+Restate the problem in one sentence
+What do you need to store? (shape of one task object)
+What are your 3 files?
+2 edge cases that could go wrong
+
+Use the 5-step approach from before. Take your time! 🎯
+
+What all things are required:
+- Task Name/ Title
+- Description
+- Due date
+- Status - Done, pending, overtime
+- ID unique 
+
+Features:
+- Create Task
+- Read a task
+- Update a Task
+- Delete the Task
+- Filter the tasks based on the status
+- Sort the task
+
+File structure:
+- serviceLayer.ts -> core logic + cron job
+- store.ts -> storing the tasks.
+- route.ts -> all the apis

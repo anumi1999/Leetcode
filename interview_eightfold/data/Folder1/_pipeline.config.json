@@ -1,0 +1,33 @@
+{
+  "pattern":   "**/*.json",
+  "outputDir": "../../output",
+  "mapping": {
+    "name": {
+      "first": "first_name",
+      "last":  "last_name"
+    },
+    "education": {
+      "sourcePath":          "education",
+      "degree":              "type",
+      "institutionName":     "school",
+      "institutionCountry":  "country",
+      "institutionState":    "state",
+      "major":               "primary_subject",
+      "minors":              "other_subjects"
+    },
+    "experience": {
+      "sourcePath": "experience",
+      "title":      "title",
+      "orgName":    "company",
+      "orgCountry": "country",
+      "orgState":   "state",
+      "orgCity":    "city",
+      "start":      "from",
+      "end":        "to"
+    },
+    "skills": {
+      "sourcePath": "skills",
+      "type":       "flat"
+    }
+  }
+}

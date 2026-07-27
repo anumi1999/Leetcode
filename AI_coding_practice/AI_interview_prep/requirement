@@ -1,0 +1,53 @@
+Problem: AI Job Application Screening Pipeline
+Build a backend that helps recruiters screen job applications using AI.
+
+Requirements:
+POST /jobs → create a job with a title and required skills list
+POST /jobs/:id/apply → accept a resume as plain text, run it through an AI model to score how well it matches the job (0–100), extract matched skills, and store the result
+GET /jobs/:id/applicants → return all applicants sorted by AI score descending
+GET /jobs/:id/applicants/top → return only applicants scoring above 70
+Background processing — AI scoring should happen async, applicant status starts as processing then updates to scored
+Logging at every stage
+Full unit tests
+
+Task:
+- POST /jobs : create jobs
+- POST /jobs/:id/apply: To apply the job
+    - Accept resume
+    - Call extract API -> sync
+    - return 200
+    - call AI service -> Claude API / OpenAI API
+    - Arch: 
+        - User click apply -> Processing as default value
+        - It calls the scoring API
+        - Return status as scored
+        Async
+- GET /jobs/:id/applicants: return all applicants sorted by AI score descending
+- GET /jobs/:id/applicants/top : return only applicants scoring above 70
+
+
+Data Model
+Jobs:
+- Title: String: Mandatory
+- Description: String: Mandatory
+- Required Skills: []: Mandatory
+- JobID: UUID: generated
+- Applicants: generated
+
+Resume:
+- Matched Skills:[] 
+- Extracted Skills: []: Non empty
+- Unmatched Skills: []
+- Score: 0-100
+- ResumeId
+- JobId
+- ApplicantID
+- ApplicationStatus: Processing default, statuses: Processing, Not proceeding, Scored
+
+Applicants:
+- Name
+- ResumeId
+- JobId
+- ApplicantID
+
+

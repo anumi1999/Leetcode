@@ -1,0 +1,43 @@
+{
+   "first_name" : "John",
+   "last_name" : "Michel1",
+   "education" : [
+       {
+           "type" : "Masters Degree",
+           "school" : "San Jose State University",
+           "country" : "USA",
+           "state": "CA",
+           "primary_subject" : "Computer science",
+           "other_subjects" : ["Maths", "Business Accounts"]
+       },
+       {
+           "type" : "Bachelor's Degree",
+           "school" : "San Jose State University",
+           "country" : "USA",
+           "state": "CA",
+           "primary_subject" : "Maths",
+           "other_subjects" : ["Computer Science", "Physics"]
+       }       
+   ],
+   "experience": [
+       {
+           "from" : "10-11-2002",
+           "title" : "Software Engineer",
+           "to" : "12-06-2006",
+           "company": "IBM",
+           "country" : "USA",
+           "state" : "CA",
+           "city": "SFO"
+       },
+       {
+           "from" : "20-06-2006",
+           "to" : "12-11-2021",
+           "title" : "Senior Software Engineer",
+           "company": "Microsoft",
+           "country" : "USA",
+           "state" : "CA",
+           "city": "SFO"
+       }
+   ],
+   "skills" : ["java", "python", "Databases", "Distributed Systems"]
+}

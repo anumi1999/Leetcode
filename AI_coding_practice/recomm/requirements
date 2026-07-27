@@ -1,0 +1,90 @@
+Problem Statement
+Eightfold processes millions of job postings daily. We need an AI-powered Job Recommendation Engine that matches candidates to relevant jobs.
+Build a backend service that:
+
+Allows adding candidate profiles with their skills, experience level, and preferred roles
+Allows adding job postings with required skills, experience level, and role type
+When a candidate requests recommendations, use AI to score and rank the top 5 matching jobs for them
+Each recommendation should include a match score and a reason why the job fits
+Cache the recommendations so the same candidate isn't scored twice unnecessarily
+Track how many times each candidate has requested recommendations
+
+
+Candidate
+- Skills: [] strings
+- Name: 
+- CandidateID: UUID
+- experience: Int
+- Roles: [] strings
+- recommendation: [] of Recommendation Object
+- noOfRecommendationRequests: Int
+
+Job:
+
+- JobId: UUID
+- Name
+- Description
+- SkillsRequired: [] of STrings
+- experience: Integer
+- Role: String
+
+Recommendations:
+
+- RecommendationId
+- RecommendationScore:
+- JobID:
+- CandidateId:
+- Ranking:
+- Reason
+- CreatedAt
+
+
+API contracts:
+
+- POST /user 
+  - Payload:
+      {
+          Skills: [],
+          Name: ad,
+          experience:,
+          Roles:[]
+      }
+  - Response:
+    - 200 : message: successfully created: 
+
+- POST /job
+ - Payload{
+      Name
+    - Description
+    - SkillsRequired: [] of STrings
+    - experience: Integer
+    - Role:
+   }
+
+- GET /recommendation/:candidate
+
+    - core.ts: gather the candidate informations
+    - fetch all the jobs available
+    - aiServiceFunction
+    - return back scoring and reason
+    - managing the top five.
+    - store it as a objects in the candidate database
+    - increment the number and 
+
+file structure:
+- models floder
+    - Candidate.ts
+    - Job.ts
+    - Recommendations.ts
+- index.ts: server starting code
+- routes.ts: defines routes endpoints
+- core.ts: - Internal function recommendation -> recommendation service
+           - managing caching
+- aiService.ts: it would be scoring and creating the reason.
+- store.ts: Database
+- logger.ts: for managing the logging
+
+
+
+
+

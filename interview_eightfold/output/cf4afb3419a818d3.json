@@ -1,0 +1,80 @@
+{
+  "id": "cf4afb3419a818d3",
+  "name": {
+    "first": "John",
+    "last": "Michel",
+    "full": "John Michel"
+  },
+  "education": [
+    {
+      "degree": "Masters Degree",
+      "institution": {
+        "name": "San Jose State University",
+        "country": "USA",
+        "state": "CA"
+      },
+      "major": "Computer science",
+      "minors": [
+        "Maths",
+        "Business Accounts"
+      ]
+    },
+    {
+      "degree": "Bachelor's Degree",
+      "institution": {
+        "name": "San Jose State University",
+        "country": "USA",
+        "state": "CA"
+      },
+      "major": "Maths",
+      "minors": [
+        "Computer Science",
+        "Physics"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "Software Engineer",
+      "organization": {
+        "name": "IBM",
+        "country": "USA",
+        "state": "CA",
+        "city": "SFO"
+      },
+      "start": "2002-11-10",
+      "end": "2006-06-12",
+      "duration_months": 43
+    },
+    {
+      "title": "Senior Software Engineer",
+      "organization": {
+        "name": "Microsoft",
+        "country": "USA",
+        "state": "CA",
+        "city": "SFO"
+      },
+      "start": "2006-06-20",
+      "end": "2021-11-12",
+      "duration_months": 185
+    }
+  ],
+  "skills": [
+    {
+      "category": "uncategorized",
+      "values": [
+        "java",
+        "python",
+        "Databases",
+        "Distributed Systems"
+      ]
+    }
+  ],
+  "extras": {},
+  "metadata": {
+    "source_folder": "data/Folder1",
+    "source_file": "candidate1.json",
+    "format_version": "Folder1",
+    "ingested_at": "2026-06-30T10:59:23.655Z"
+  }
+}

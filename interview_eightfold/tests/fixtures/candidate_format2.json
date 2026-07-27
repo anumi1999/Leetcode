@@ -1,0 +1,54 @@
+{
+  "full_name": "Michel, John",
+  "education": [
+    {
+      "type": "Masters",
+      "school": {
+        "name": "California University of Pennsylvania",
+        "country": "USA",
+        "state": "CA"
+      },
+      "specialization": "Computer science",
+      "ancillary_subjects": ["Maths", "Business Accounts"]
+    },
+    {
+      "type": "Bachelors of Engineering",
+      "school": {
+        "name": "Indian Institute of Technology",
+        "country": "INDIA",
+        "state": "Tamil Nadu"
+      },
+      "primary_subject": "Computer Science",
+      "other_subjects": ["Maths", "English"]
+    }
+  ],
+  "experience": [
+    {
+      "start": "15-July-2001",
+      "end": "12-September-2005",
+      "job_title": "SE II",
+      "orgnanization": {
+        "name": "google",
+        "country": "USA",
+        "state": "CA",
+        "city": "SFO"
+      }
+    },
+    {
+      "start": "01-October-2005",
+      "end": "11-March-2021",
+      "job_title": "Principal Engineer",
+      "orgnanization": {
+        "name": "uber",
+        "country": "USA",
+        "state": "CA",
+        "city": "SFO"
+      }
+    }
+  ],
+  "skills": [
+    { "category": "programming_language", "values": ["Go", "python"] },
+    { "category": "databases", "values": ["MySQL", "Postgres", "Oracle"] },
+    { "category": "others", "values": ["Software Engineering", "Distributed Systems"] }
+  ]
+}

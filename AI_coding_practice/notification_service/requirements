@@ -1,0 +1,17 @@
+We process thousands of job applications daily at Eightfold. We need a Candidate Notification Service that keeps applicants informed about their application status.
+Build a backend service that:
+
+Allows recruiters to send status update notifications to candidates
+Supports three notification channels — email, SMS, and in-app
+If a notification fails, it should retry up to 3 times before marking it as failed
+Recruiters can check the delivery status of any notification
+At the end of each day, generate a summary report of total sent, failed, and pending notifications
+
+
+Requirements: 
+- Recruiter can send the notifications to the user. 
+- Supported channel: email, SMS, in-app
+- 3 retries -> before failed
+- delivery status?
+- dashboard: sent notif, failed, pending
+

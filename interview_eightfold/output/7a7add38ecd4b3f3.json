@@ -1,0 +1,96 @@
+{
+  "id": "7a7add38ecd4b3f3",
+  "name": {
+    "first": "Michel",
+    "last": "John",
+    "full": "Michel John"
+  },
+  "education": [
+    {
+      "degree": "Masters",
+      "institution": {
+        "name": "California University of Pennsylvania",
+        "country": "USA",
+        "state": "CA"
+      },
+      "major": "Computer science",
+      "minors": [
+        "Maths",
+        "Business Accounts"
+      ]
+    },
+    {
+      "degree": "Bachelors of Enginnering",
+      "institution": {
+        "name": "Indian Institute of Technology",
+        "country": "INDIA",
+        "state": "Tamil Nadu"
+      },
+      "major": "Computer Science",
+      "minors": [
+        "Maths",
+        "English"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "title": "SE II",
+      "organization": {
+        "name": "google",
+        "country": "USA",
+        "state": "CA",
+        "city": "SFO"
+      },
+      "start": "2001-07-15",
+      "end": "2005-09-12",
+      "duration_months": 50
+    },
+    {
+      "title": "Principal Engineer",
+      "organization": {
+        "name": "uber",
+        "country": "USA",
+        "state": "CA",
+        "city": "SFO"
+      },
+      "start": "2005-10-01",
+      "end": "2021-03-11",
+      "duration_months": 185
+    }
+  ],
+  "skills": [
+    {
+      "category": "programming_language",
+      "values": [
+        "Go",
+        "python"
+      ]
+    },
+    {
+      "category": "databases",
+      "values": [
+        "MySQL",
+        "Postgres",
+        "Oracle"
+      ]
+    },
+    {
+      "category": "others",
+      "values": [
+        "Software Engineering",
+        "Distributed Systems",
+        "Cloud services",
+        "Datastructures",
+        "Algorithms"
+      ]
+    }
+  ],
+  "extras": {},
+  "metadata": {
+    "source_folder": "data/Folder2",
+    "source_file": "candidate2.json",
+    "format_version": "Folder2",
+    "ingested_at": "2026-06-30T11:02:59.493Z"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "pattern":   "**/*.json",
+  "outputDir": "../../output",
+  "mapping": {
+    "name": {
+      "full":           "full_name",
+      "fullNameFormat": "last, first"
+    },
+    "education": {
+      "sourcePath":         "education",
+      "degree":             "type",
+      "institutionName":    "school.name",
+      "institutionCountry": "school.country",
+      "institutionState":   "school.state",
+      "major":              ["specialization", "primary_subject"],
+      "minors":             ["ancillary_subjects", "other_subjects"]
+    },
+    "experience": {
+      "sourcePath": "experience",
+      "title":      "job_title",
+      "orgName":    ["orgnanization.name",    "organization.name"],
+      "orgCountry": ["orgnanization.country", "organization.country"],
+      "orgState":   ["orgnanization.state",   "organization.state"],
+      "orgCity":    ["orgnanization.city",    "organization.city"],
+      "start":      "start",
+      "end":        "end"
+    },
+    "skills": {
+      "sourcePath":    "skills",
+      "type":          "grouped",
+      "categoryField": "category",
+      "valuesField":   "values"
+    }
+  }
+}
